@@ -18,5 +18,9 @@ class Kegiatan extends Model
     {
         return $this->hasMany(Keuangan::class, 'kegiatan_id', 'id');
     }
+    public function dokumentasi()
+    {
+        return $this->hasMany(Dokumentasi::class, 'kegiatan_id', 'id');
+    }
 
 }

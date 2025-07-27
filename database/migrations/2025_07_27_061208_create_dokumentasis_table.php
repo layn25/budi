@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignUuid('user_id')->references('id')->on('users');
             $table->foreignUuid('kegiatan_id')->references('id')->on('kegiatans');
             $table->string('nama');
-            $table->uuid('users_id');
             $table->enum('tipe', ['foto', 'video']);
             $table->string('file_path');
             $table->text('deskripsi')->nullable();

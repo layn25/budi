@@ -44,6 +44,8 @@ Route::middleware(['auth', 'user.status'])->group(function () {
         Route::post('/store', [KegiatanController::class, 'store'])->name('kegiatan.store');
         Route::put('update/{id}', [KegiatanController::class, 'update'])->name('kegiatan.update');
         Route::delete('delete/{id}', [KegiatanController::class, 'delete'])->name('kegiatan.delete');
+        Route::post('/storeDokumentasi', [KegiatanController::class, 'storeDokumentasi'])->name('dokumentasi.store');
+        Route::delete('deleteDokumentasi/{id}', [KegiatanController::class, 'deleteDokumentasi'])->name('dokumentasi.delete');
     });
     Route::prefix('/keuangan')->group(function () {
         Route::get('/', [KeuanganController::class, 'index'])->name('keuangan');

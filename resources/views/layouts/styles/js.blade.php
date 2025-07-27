@@ -18,6 +18,15 @@
             });
         }
     });
+
+    $('.modal').on('shown.bs.modal', function () {
+        $(this).find('.datatable').each(function () {
+            if (!$.fn.DataTable.isDataTable(this)) {
+                $(this).DataTable({ scrollX: true });
+            }
+        });
+    });
 </script>
+
 
 @include('alerts.sweetalert')
