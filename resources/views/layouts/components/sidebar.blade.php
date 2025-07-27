@@ -54,7 +54,12 @@
   </li>
   @endif
   <!-- Nav Item - Product -->
-  
+  <li class="nav-item {{ Nav::isRoute('keuangan') }}">
+      <a class="nav-link" href="{{ route('keuangan') }}">
+          <i class="fas fa-fw fa-boxes"></i>
+          <span>{{ __('Keuangan') }}</span>
+      </a>
+  </li>
 
 
   <!-- Divider -->

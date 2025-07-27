@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label for="role{{ $user->id }}">Role</label>
                         <select class="form-control" id="role{{ $user->id }}" name="role" required>
-                            <option value="operator" {{ $user->role == 'operator' ? 'selected' : '' }}>Pengguna</option>
+                            <option value="pengurus" {{ $user->role == 'pengurus' ? 'selected' : '' }}>Pengurus</option>
                             <option value="admin" {{ $user->role == 'admin' ? 'selected' : '' }}>Admin</option>
                         </select>
                     </div>

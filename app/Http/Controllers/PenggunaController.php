@@ -21,7 +21,7 @@ class PenggunaController extends Controller
                 'nama'=> 'required|string|max:255',
                 'email' => 'required|email|unique:users,email',
                 'password'=> 'required|string|min:8|max:12|confirmed',
-                'role'=> 'required|in:admin,operator',
+                'role'=> 'required|in:admin,pengurus',
                 'status'=> 'nullable|in:aktif,nonaktif',
             ]);
 
@@ -47,7 +47,7 @@ class PenggunaController extends Controller
         $validated = $request->validate([
             'nama'  => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $id,
-            'role'  => 'required|in:admin,operator',
+            'role'  => 'required|in:admin,pengurus',
             'status' => 'required|in:aktif,nonaktif',
             'password' => 'nullable|string|min:8|max:12|confirmed',
         ]);

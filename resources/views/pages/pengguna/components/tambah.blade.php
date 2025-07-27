@@ -32,7 +32,7 @@
                         <label for="role">Role</label>
                         <select class="form-control" id="role" name="role" required>
                             <option value="" hidden>Pilih Role</option>
-                            <option value="operator">Operator</option>
+                            <option value="pengurus">Pengurus</option>
                             <option value="admin">Admin</option>
                         </select>
                     </div>

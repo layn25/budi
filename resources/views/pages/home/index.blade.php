@@ -20,12 +20,6 @@
         </div>
     @endif
 
-    @if($stokMenipis->count() > 0)
-        <div class="alert alert-warning">
-            <strong>⚠️ Peringatan:</strong> Ada {{ $stokMenipis->count() }} barang dengan stok menipis!
-            <a href="{{ route('barang.stok-menipis') }}" class="btn btn-sm btn-primary ml-2">Lihat Barang</a>
-        </div>
-    @endif
 
     <div class="row">
 
