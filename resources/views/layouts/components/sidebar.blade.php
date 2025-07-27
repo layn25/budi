@@ -40,12 +40,6 @@
           <span>{{ __('Kegiatan') }}</span>
       </a>
   </li>
-  <li class="nav-item {{ Nav::isRoute('keuangan') }}">
-      <a class="nav-link" href="{{ route('keuangan') }}">
-          <i class="fas fa-fw fa-boxes"></i>
-          <span>{{ __('Keuangan') }}</span>
-      </a>
-  </li>
   <li class="nav-item {{ Nav::isRoute('anggota') }}">
       <a class="nav-link" href="{{ route('anggota') }}">
           <i class="fas fa-fw fa-boxes"></i>
@@ -53,8 +47,7 @@
       </a>
   </li>
   @endif
-  <!-- Nav Item - Product -->
-  <li class="nav-item {{ Nav::isRoute('keuangan') }}">
+ <li class="nav-item {{ Nav::isRoute('keuangan') }}">
       <a class="nav-link" href="{{ route('keuangan') }}">
           <i class="fas fa-fw fa-boxes"></i>
           <span>{{ __('Keuangan') }}</span>
