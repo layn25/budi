@@ -21,10 +21,6 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Mengirimkan data stok menipis ke semua view
-        View::composer('*', function ($view) {
-            $stokMenipis = Barang::where('jumlah', '<=', 12)->get();
-            $view->with('stokMenipis', $stokMenipis);
-        });
+
     }
 }

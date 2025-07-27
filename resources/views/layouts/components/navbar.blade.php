@@ -9,32 +9,6 @@
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
 
-        <!-- Notifikasi Stok Menipis -->
-        <li class="nav-item dropdown no-arrow">
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="stokDropdown">
-                <h6 class="dropdown-header">
-                    Stok Menipis
-                </h6>
-
-                @forelse ($stokMenipis as $barang)
-                    <a class="dropdown-item d-flex align-items-center" href="{{ route('barang.stok-menipis') }}#barang-{{ $barang->id }}">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-warning">
-                                <i class="fas fa-box text-white"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">{{ $barang->kategori ?? 'Tanpa Kategori' }}</div>
-                            <span class="font-weight-bold">{{ $barang->name }} ({{ $barang->jumlah }})</span>
-                        </div>
-                    </a>
-                @empty
-                    <span class="dropdown-item text-center text-muted small">Tidak ada stok menipis</span>
-                @endforelse
-            </div>
-        </li>
-
-
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->
